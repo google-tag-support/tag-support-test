@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTM & Google Ads Test Site</title>
+    
+    <style>
+        body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; text-align: center; }
+        .button { display: inline-block; padding: 12px 24px; background-color: #4285F4; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 20px; cursor: pointer; border: none; }
+        .button:hover { background-color: #357ae8; }
+        .status-box { background: #f1f3f4; padding: 15px; border-radius: 8px; margin-top: 30px; font-size: 0.9em; color: #5f6368; }
+    </style>
+</head>
+<body>
+    <h1>GTM Test Environment</h1>
+    <p>This site is live for testing Google Tag Manager and Google Ads Tags.</p>
+
+    <button id="main-test-button" class="button">Click to Fire Tag</button>
+
+    <br><br>
+
+    <a href="thank-you.html" id="conversion-link">Go to Thank You Page (Conversion)</a>
+
+    <div class="status-box">
+        <strong>Testing Tips:</strong><br>
+        1. Open GTM Preview Mode.<br>
+        2. Click the blue button to test "Click" triggers.<br>
+        3. Click the link above to test "Page View" conversions.
+    </div>
+
+    <script>
+        // Optional: Simple log to console to confirm page load
+        console.log("Test site loaded. Ready for GTM.");
+        
+        document.getElementById('main-test-button').addEventListener('click', function() {
+            alert('Button Clicked! Check your GTM Debugger.');
+        });
+    </script>
+</body>
+</html>

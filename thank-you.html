@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success - Conversion Page</title>
+
+    <style>
+        body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; text-align: center; }
+        .success-icon { font-size: 50px; color: #0f9d58; }
+        a { color: #4285F4; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="success-icon">✔</div>
+    <h1>Conversion Successful!</h1>
+    <p>If your Google Ads Tag is set to fire on this URL, you should see it in the Tag Assistant now.</p>
+    
+    <p><a href="index.html">← Return to Home</a></p>
+
+    <script>
+        // Example: Sending a custom dataLayer event for a conversion
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'test_conversion_success',
+            'conversion_value': 100.00,
+            'currency': 'USD'
+        });
+    </script>
+</body>
+</html>
